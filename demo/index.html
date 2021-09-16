@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Create Account Project</title>
+	<style type="text/css">
+		div{
+			margin: auto;
+			padding: 5px;
+			justify-content: center;
+			align-items: center;
+		}
+		button{
+			width: 300px;
+			height: 30px;
+		}
+		input {
+			width: 300px;
+			height: 20px;
+		}
+		form{
+			position: relative;
+
+		}
+		.l{
+			margin-left: 25%;
+			margin-right: 25%;
+			padding-bottom: 25px;
+			border: 3px solid grey;
+		}
+		img {
+			width: 15px;
+			height: 15px;
+			background-image: white;
+			color: white;
+		}
+	</style>
+<body>
+	<div class="l">
+		
+		<form method="POST" action="login.php">
+			<h1>
+				Create Account
+			</h1>
+			<div>
+				<label> FIRST NAME </label><br>
+				<input type="text" name="firstname" required="*">
+			</div>
+			<div>
+				<label> LAST NAME </label><br>
+				<input type="text" name="lastname" required="*">
+			</div>
+			<div>
+				<label>  EMAIL </label><br>
+				<input type="text" name="email" required="*">
+			</div>
+			<div>
+				<label>  PASSWORD </label><br>
+				<input type="password" name="password" required="*">
+			</div>
+			<br>
+			<input type="submit" value="Create" style = "width:300px; height:30px; background-color: black; color:white"></input>
+			<br>
+			<br>
+			<button style="background-color:blue; color:white"> <img src="facebook.png" > Sign in with Facebook </button>
+			<br>
+			<button style="background-color:red; color:white"> <img src="google.png"> Sign in with Google</button>
+		</form>
+	</div>
+</body>
+</html>
